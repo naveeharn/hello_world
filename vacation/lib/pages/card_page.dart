@@ -1,16 +1,38 @@
 import 'package:flutter/material.dart';
 
-class MessagePage extends StatefulWidget {
+class CardPage extends StatefulWidget {
   @override
-  _MessagePageState createState() => _MessagePageState();
+  _CardPageState createState() => _CardPageState();
 }
 
-class _MessagePageState extends State<MessagePage> {
+class _CardPageState extends State<CardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Home Page'),),
-      body: Text('This is Body Home Page'),
+
+      body: Container(
+
+        padding: EdgeInsets.symmetric(horizontal: 16,vertical: 24),
+        height: MediaQuery.of(context).size.height * 0.35,
+        child: Card(
+          //color: Colors.deepPurpleAccent,
+          child: Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage('assets/images/bg_vacation_main.jpg'))
+
+            ),
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          elevation: 8,
+
+
+        ),
+
+      ),
     );
   }
 }
