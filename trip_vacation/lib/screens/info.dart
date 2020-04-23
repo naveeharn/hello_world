@@ -260,7 +260,7 @@ Widget imageVacation(int a) {
                               'https://www.thairath.co.th/media/dFQROr7oWzulq5FZWt5uOWxNqVgnUIRnnhFngXa2ttHqDnSclT4eKMvFn6UPjnX1dZU.webp'),
                           fit: BoxFit.cover,
                         ),
-                        borderRadius: BorderRadius.circular(400),
+                        borderRadius: BorderRadius.circular(500),
                         border: Border.all(color: Colors.white),
                       ),
                     ),
